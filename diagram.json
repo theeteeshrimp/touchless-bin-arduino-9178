@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "author": "theetee",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-arduino-uno", "id": "uno", "top": 0, "left": 0, "attrs": {} },
+    { "type": "wokwi-servo", "id": "servo1", "top": -98.7, "left": 234.6, "attrs": {} },
+    {
+      "type": "wokwi-obstacle-sensor",
+      "id": "ir1",
+      "top": -110.6,
+      "left": 317.55,
+      "rotate": 180,
+      "attrs": {}
+    }
+  ],
+  "connections": [
+    ["ir1:VCC", "uno:5V.1", "red", ["h0"]],
+    ["ir1:GND", "uno:GND.1", "black", ["h0"]],
+    ["ir1:OUT", "uno:7", "green", ["h0"]],
+    ["servo1:V+", "uno:5V.1", "red", ["h0"]],
+    ["servo1:GND", "uno:GND.2", "black", ["h0"]],
+    ["servo1:PWM", "uno:9", "orange", ["h0"]]
+  ]
+}
