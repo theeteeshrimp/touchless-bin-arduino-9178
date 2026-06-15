@@ -2,7 +2,7 @@
 
 **An automatic, touch-free trash can that opens its lid when it detects your hand.**
 
-![Smart Trash Can Concept](concept.png)
+![Smart Trash Can Concept](concept.jpg)
 
 ## Overview
 
